@@ -6,15 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <android.support.v7.widget.GridLayout
         android:layout_width="395dp"
         android:layout_height="706dp"
@@ -32,30 +23,77 @@
         app:rowCount="4">
 
         <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button" />
+            android:id="@+id/speakEnglishButton"
+            android:layout_gravity="fill"
+            android:onClick="playFrenchTranslation"
+            android:text="Do you \nspeak English?"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:tag = "doyouspeakenglish" />
 
         <Button
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Button" />
+            android:id="@+id/goodEveningButton"
+            android:layout_gravity="fill"
+            android:onClick="playFrenchTranslation"
+            android:text="Good evening"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:tag = "goodevening" />
 
         <Button
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Button" />
+            android:id="@+id/helloButton"
+            android:layout_gravity="fill"
+            android:onClick="playFrenchTranslation"
+            android:text="Hello"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:tag = "hello" />
 
         <Button
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Button" />
+            android:id="@+id/howAreYouButton"
+            android:layout_gravity="fill"
+            android:onClick="playFrenchTranslation"
+            android:text="How are you?"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:tag = "howareyou" />
 
-        
+        <Button
+            android:id="@+id/iLiveInButton"
+            android:layout_gravity="fill"
+            android:onClick="playFrenchTranslation"
+            android:text="I live in..."
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:tag = "ilivein" />
+
+        <Button
+            android:id="@+id/myNameIsButton"
+            android:layout_gravity="fill"
+            android:onClick="playFrenchTranslation"
+            android:text="My name is..."
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:tag = "mynameis" />
+
+        <Button
+            android:id="@+id/pleaseButton"
+            android:layout_gravity="fill"
+            android:onClick="playFrenchTranslation"
+            android:text="Please"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:tag = "please" />
+
+        <Button
+            android:id="@+id/welcomeButton"
+            android:layout_gravity="fill"
+            android:onClick="playFrenchTranslation"
+            android:text="Welcome"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:tag = "welcome" />
+
     </android.support.v7.widget.GridLayout>
 
 </android.support.constraint.ConstraintLayout>
