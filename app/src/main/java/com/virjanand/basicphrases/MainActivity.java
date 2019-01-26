@@ -9,13 +9,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void playFrenchTranslation(View view) {
 
-        String tag = (String) view.getTag();
-        playSentence(tag);
-    }
-
-    private void playSentence(String tag) {
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, getResources().getIdentifier(tag, "raw", getPackageName()));
-        mediaPlayer.start();
+        MediaPlayer
+                .create(this, getResources().getIdentifier((String) view.getTag()
+                        , "raw", getPackageName()))
+                .start();
     }
 
     @Override
